@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlLang">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Awesome Engineering Works</title>
+    <!-- PWA Meta Tags -->
+    <meta name="description" content="Professional engineering solutions in architecture, construction, and design">
+    <meta name="theme-color" content="#f1c40f">
+    <link rel="manifest" href="data:application/manifest+json,{}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/mon.css">
+</head>
+
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+
+    <!-- Header - Always visible -->
+    <header class="header" id="header" role="banner">
+        <div class="logo" title="Awesome Engineering">
+            <div class="logo-image">
+                <img src="image/image.png" alt="Awesome Logo" width="30" height="30">
+            </div>
+            <span class="logo-text">Awe<span class="logo-highlight">some</span></span>
+        </div>
+
+        <div class="right-side">
+            <!-- Search Toggle Button -->
+            <button class="btn search-icon" id="searchToggle" aria-label="Open search" aria-expanded="false">
+                <i class="fas fa-search"></i>
+            </button>
+
+            <!-- Language Selector -->
+            <select class="lang-select" id="languageSelect" aria-label="Select language">
+                <option value="en">English</option>
+                <option value="am">አማርኛ</option>
+            </select>
+
+            <!-- Menu Toggle Button -->
+            <button class="btn menu-icon" id="menuToggle" aria-label="Open menu" aria-expanded="false"
+                aria-controls="mobileMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar" role="search" aria-label="Search website">
+        <div class="search-wrapper">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search for projects, services..."
+                aria-label="Search input">
+            <button class="search-btn" id="searchButton" aria-label="Submit search">
+                <i class="fas fa-search"></i> Search
+            </button>
+        </div>
+        <div class="search-results" id="searchResults" aria-live="polite"></div>
+    </div>
+
+    <!-- Menu Backdrop -->
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Main navigation">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <div class="logo-image">
+                    <img src="image/image.png" alt="Awesome Logo" width="30" height="30">
+                </div>
+                <span class="logo-text">Awe<span class="logo-highlight">some</span></span>
+            </div>
+            <button class="btn close-menu" id="closeMenu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <ul class="smart-menu">
+            <li><a href="#home" class="menu-link active" data-section="home"><i class="fas fa-home"></i>
+                    <span data-translate="home">Home</span></a></li>
+            <li><a href="#about" class="menu-link" data-section="about"><i class="fas fa-info-circle"></i>
+                    <span data-translate="about">About</span></a></li>
+            <li><a href="#projects" class="menu-link" data-section="projects"><i class="fas fa-project-diagram"></i>
+                    <span data-translate="projects">Projects</span></a></li>
+            <li><a href="#testimonials" class="menu-link" data-section="testimonials"><i class="fas fa-quote-left"></i>
+                    <span data-translate="testimonials">Testimonials</span></a></li>
+            <li><a href="#contact" class="menu-link" data-section="contact"><i class="fas fa-envelope"></i>
+                    <span data-translate="contact">Contact</span></a></li>
+        </ul>
+
+        <div class="mobile-language">
+            <select class="lang-select" id="mobileLanguageSelect" aria-label="Select language">
+                <option value="en">English</option>
+                <option value="am">አማርኛ</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <!-- Home Section -->
+        <section class="hero" id="home">
+            <div class="content-wrapper">
+                <div class="home-content fade-in">
+                    <div class="home-text">
+                        <h1 data-translate="welcome">Welcome to Awesome Engineering Works</h1>
+                        <p class="home-description" data-translate="home_desc">
+                            Professional engineering solutions in architecture, construction,
+                            and design. We bring your dreams to life with precision and creativity.
+                        </p>
+                        <ul class="services-list">
+                            <li><i class="fas fa-drafting-compass"></i> <span data-translate="service1">Architecture
+                                    Design</span></li>
+                            <li><i class="fas fa-building"></i> <span data-translate="service2">Construction
+                                    Management</span></li>
+                            <li><i class="fas fa-home"></i> <span data-translate="service3">House Planning</span></li>
+                            <li><i class="fas fa-print"></i> <span data-translate="service4">3D Printing &
+                                    Modeling</span></li>
+                        </ul>
+                        <div class="home-buttons">
+                            <button class="cta-button primary-btn" onclick="navigateToSection('projects')">
+                                <i class="fas fa-eye"></i> <span data-translate="view_works">View Our Works</span>
+                            </button>
+                            <button class="cta-button secondary-btn" onclick="navigateToSection('contact')">
+                                <i class="fas fa-envelope"></i> <span data-translate="contact_us">Contact Us</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="home-image">
+                        <img src="image/civil-engineering-design-500x500.webp" alt="Awesome Engineering Project"
+                            class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section" id="stats">
+            <div class="content-wrapper">
+                <div class="stats-grid">
+                    <div class="feature-card stat-card fade-in">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="15">6</h3>
+                        <p class="stat-title" data-translate="years_exp">Years Experience</p>
+                    </div>
+                    <div class="feature-card stat-card fade-in">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="250">35</h3>
+                        <p class="stat-title" data-translate="projects_completed">Projects Completed</p>
+                    </div>
+                    <div class="feature-card stat-card fade-in">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="50">5</h3>
+                        <p class="stat-title" data-translate="team_members">Team Members</p>
+                    </div>
+                    <div class="feature-card stat-card fade-in">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="stat-number" data-count="25">2</h3>
+                        <p class="stat-title" data-translate="awards_won">Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="content-wrapper">
+                <div class="about-content fade-in">
+                    <div class="about-text">
+                        <h2 data-translate="about_us" style="text-align: center;">About As</h2>
+                        <p class="about-description" data-translate="about_desc">
+                            Founded by Berket Eyasu, Awesome Construction has been delivering
+                            exceptional engineering solutions for over 15 years. We specialize
+                            in architectural design, construction management, house planning,
+                            3D modeling, and printing services.
+                        </p>
+                        <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-translate="feature1">Modern Architectural Designs</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-translate="feature2">Sustainable Construction</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-translate="feature3">3D Visualization</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span data-translate="feature4">Project Management</span>
+                            </div>
+                        </div>
+                        <div class="founder-info-mobile">
+                            <h4>Berket Eyasu</h4>
+                            <p data-translate="founder">Founder & CEO</p>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                            alt="Berket Eyasu">
+                        <div class="founder-info">
+                            <h4>Berket Eyasu</h4>
+                            <p data-translate="founder">Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="content-wrapper">
+                <h2 data-translate="testimonials">Client Testimonials</h2>
+                <div class="swiper testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial slides will be added by JavaScript -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="content-wrapper">
+                <h2 data-translate="our_projects">Our Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project cards will be added by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="content-wrapper">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2 data-translate="contact_us">Contact Us</h2>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3 data-translate="email">Email</h3>
+                                <p>gediyoneyasu26@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3 data-translate="phone">Phone</h3>
+                                <p>+251 964 113 417</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3 data-translate="address">Address</h3>
+                                <p data-translate="address_text">Dawuro Tarcha, Ethiopia</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3 data-translate="hours">Working Hours</h3>
+                                <p data-translate="hours_text">24/7 Available</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3 data-translate="send_message">Send Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email (Optional)">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" placeholder="Your Comment/Message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="attachment" data-translate="attach_files">Attach Files
+                                    (Images/Videos)</label>
+                                <input type="file" id="attachment" multiple accept="image/*,video/*">
+                            </div>
+                            <button type="submit" class="submit-btn" data-translate="send_message">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- live chat -->
+    <!-- Live Chat Widget -->
+    <div class="live-chat-widget" id="liveChatWidget">
+        <button class="chat-toggle" id="chatToggle" aria-label="Open live chat">
+            <i class="fas fa-comments"></i>
+            <span class="chat-badge" id="messageBadge">0</span>
+        </button>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <i class="fab fa-telegram"></i>
+                    <h3 data-translate="live_chat">Live Chat</h3>
+                </div>
+                <button class="chat-close" id="chatClose" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-welcome">
+                    <div class="welcome-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <p data-translate="chat_welcome">Hello! How can we help you today?</p>
+                    <p class="chat-subtitle" data-translate="chat_subtitle">Chat directly with our team via Telegram</p>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="typing-indicator" id="typingIndicator">
+                    <span data-translate="typing">Awesome Team is typing...</span>
+                </div>
+
+                <div class="chat-input-container">
+                    <input type="text" class="chat-input" id="chatInput" placeholder="Type your message..."
+                        data-translate-placeholder-en="Type your message..."
+                        data-translate-placeholder-am="መልእክትዎን ይፃፉ..." maxlength="500">
+                    <button class="chat-send" id="chatSend" aria-label="Send message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+
+                <div class="telegram-direct">
+                    <p data-translate="chat_via_telegram">Or chat directly on Telegram:</p>
+                    <a href="https://t.me/Gediyoneyasu" class="telegram-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-telegram"></i>
+                        <span>@Gediyoneyasu</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="content-wrapper">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="about_company">About Awesome Engineering</h3>
+                    <p data-translate="footer_desc">Professional engineering solutions with 15+ years of experience in
+                        architecture, construction, and design.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/Gediyoneyasu" aria-label="Telegram" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="quick_links">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> <span
+                                    data-translate="home">Home</span></a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> <span
+                                    data-translate="about">About</span></a></li>
+                        <li><a href="#projects"><i class="fas fa-chevron-right"></i> <span
+                                    data-translate="projects">Projects</span></a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> <span
+                                    data-translate="contact">Contact</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="services_list">Our Services</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-drafting-compass"></i> <span data-translate="service1">Architecture
+                                Design</span></li>
+                        <li><i class="fas fa-building"></i> <span data-translate="service2">Construction
+                                Management</span></li>
+                        <li><i class="fas fa-home"></i> <span data-translate="service3">House Planning</span></li>
+                        <li><i class="fas fa-print"></i> <span data-translate="service4">3D Printing & Modeling</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-translate="contact_info">Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> gediyoneyasu26@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +251 964 113 417</li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-translate="address_text">Dawuro Tarcha,
+                                Ethiopia</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2024 Awesome Engineering. <span data-translate="rights_reserved">All rights reserved.</span>
+                </p>
+                <p class="mt-20">Designed with <i class="fas fa-heart"></i> for excellence in engineering</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-lightbox"><i class="fas fa-times"></i></button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-info">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/mond.js"></script>
+</body>
+
+</html>

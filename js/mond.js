@@ -167,32 +167,32 @@ const testimonials = [
 const projects = [
     {
         title: "Modern Villa Complex",
-        image: "image/home2.jpg",
+        image: "part1/image/home2.jpg",
         description: "Luxury villa complex with modern amenities and sustainable design features."
     },
     {
         title: "tarcha kal-hiwot",
-        image: "image/interir.jpg",
+        image: "part1/image/interir.jpg",
         description: "G+4 design with all design."
     },
     {
         title: "Residential Apartments",
-        image: "image/AutoCAD used for building design.webp",
+        image: "part1/image/AutoCAD used for building design.webp",
         description: "tarekegn G+2."
     },
     {
         title: "Gessa kalihiwot church",
-        image: "image/pro3.jpg",
+        image: "part1/image/pro3.jpg",
         description: "G+2 with great interir part."
     },
     {
         title: "Hospital Complex",
-        image: "image/civil-engineering-design-500x500.webp",
+        image: "part1/image/civil-engineering-design-500x500.webp",
         description: "Modern healthcare facility with specialized infrastructure."
     },
     {
         title: "Educational Campus",
-        image: "image/inte3.jpg",
+        image: "part1/image/inte3.jpg",
         description: "University campus with sustainable and accessible design."
     }
 ];

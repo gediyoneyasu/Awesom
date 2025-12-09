@@ -167,7 +167,7 @@ const testimonials = [
 const projects = [
     {
         title: "Modern Villa Complex",
-        image: "/part1/image/home2.jpg",
+        image: "part1/image/home2.jpg",
         description: "Luxury villa complex with modern amenities and sustainable design features."
     },
     {
@@ -177,7 +177,7 @@ const projects = [
     },
     {
         title: "Residential Apartments",
-        image: "/part1/image/AutoCAD used for building design.webp",
+        image: "part1/image/AutoCAD used for building design.webp",
         description: "tarekegn G+2."
     },
     {
@@ -187,12 +187,12 @@ const projects = [
     },
     {
         title: "Hospital Complex",
-        image: "/part1/image/civil-engineering-design-500x500.webp",
+        image: "part1/image/civil-engineering-design-500x500.webp",
         description: "Modern healthcare facility with specialized infrastructure."
     },
     {
         title: "Educational Campus",
-        image: "/part1/image/inte3.jpg",
+        image: "part1/image/inte3.jpg",
         description: "University campus with sustainable and accessible design."
     }
 ];
